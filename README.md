@@ -1,6 +1,6 @@
 # Base64
 
-A library to encode and decode binaries using the base64 encoding scheme. Implemented based on Nikalas Long's [blog](https://simplabs.com/blog/2020/06/25/writing-rust-nifs-for-elixir-with-rustler/).
+A library to encode and decode binaries using the base64 encoding scheme. Implemented based on Nikalas Long's [blog](https://simplabs.com/blog/2020/06/25/writing-rust-nifs-for-elixir-with-rustler/) and [repository](https://github.com/niklaslong/base64/).
 
 
 ## Installation
