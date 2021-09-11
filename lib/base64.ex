@@ -3,16 +3,13 @@ defmodule Base64 do
   Documentation for `Base64`.
   """
 
-  @doc """
-  Hello world.
+  use Rustler, otp_app: :base64, crate: "base64_nif"
 
-  ## Examples
+  @spec decode(binary, atom) :: binary
+  def decode(_b64, _opt \\ :standard), do: error()
 
-      iex> Base64.hello()
-      :world
+  @spec encode(binary, atom) :: binary
+  def encode(_s, _opt \\ :standard), do: error()
 
-  """
-  def hello do
-    :world
-  end
+  defp error(), do: :erlang.nif_error(:nif_not_loaded)
 end
